@@ -61,3 +61,17 @@ npm run build
 ```
 
 This produces a fully static export in the `/out` directory. Serve the contents of `/out` from any web server or static file host.
+
+## Step 5: Build the Android APK
+
+The Android app bundles the static export using Capacitor. To build locally, install the Android SDK and Java 21, then run:
+
+```bash
+npx cap sync android
+cd android
+./gradlew assembleDebug
+```
+
+The debug APK is created at `android/app/build/outputs/apk/debug/app-debug.apk`.
+
+Pushing to `main` also runs the **Build Android APK** GitHub Actions workflow. Download the `profitpal-android-debug` artifact from the completed workflow run, or start a build from the Actions tab with **Run workflow**.

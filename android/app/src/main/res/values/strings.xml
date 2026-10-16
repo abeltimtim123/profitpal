@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ProfitPal</string>
+    <string name="title_activity_main">ProfitPal</string>
+    <string name="package_name">com.profitpal.app</string>
+    <string name="custom_url_scheme">com.profitpal.app</string>
+</resources>
